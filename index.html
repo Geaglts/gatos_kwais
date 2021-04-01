@@ -13,8 +13,14 @@
     </head>
     <body>
         <header>
-            <h1>Gatos Kwai</h1>
-            <nav></nav>
+            <h1><a href="/">Gatos Kwais</a></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <section>
@@ -87,6 +93,7 @@
                             type="text"
                             id="nombre_gato"
                             placeholder="Nombre del michi"
+                            name="nombre_gato"
                             required
                         />
                     </label>
@@ -97,12 +104,32 @@
                             id="edad_gato"
                             min="0"
                             max="50"
+                            name="edad_gato"
                             required
                         />
                     </label>
                     <label for="nacimiento_gato">
                         <span>¿Cuando lo conociste? 🎉</span>
-                        <input type="date" id="nacimiento_gato" required />
+                        <input
+                            type="date"
+                            id="nacimiento_gato"
+                            name="nacimiento_gato"
+                            required
+                        />
+                    </label>
+                    <label for="tamano_gato">
+                        <span>¿De que tamaño es? 🐈</span>
+                        <!-- <select name="tamano_gato" id="tamano">
+                            <option value="gato_chiquito">Ta chiquito</option>
+                            <option value="gato_mediano">Ta mediano</option>
+                            <option value="gato_grande">Ta grandote</option>
+                        </select> -->
+                        <input list="tamano_gato" />
+                        <datalist id="tamano_gato">
+                            <option value="gato_chiquito">Ta chiquito</option>
+                            <option value="gato_mediano">Ta mediano</option>
+                            <option value="gato_grande">Ta grandote</option>
+                        </datalist>
                     </label>
                     <label for="descripcion_gato">
                         <span>Cuentanos mas sobre tu michi 😸</span>
@@ -110,6 +137,7 @@
                             id="descripcion_gato"
                             cols="25"
                             rows="5"
+                            name="descripcion_gato"
                             required
                         >
                         </textarea>

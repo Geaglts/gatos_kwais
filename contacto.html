@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contactanos</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Gatos Kwais</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="tu nombre"
+                        autocomplete="name"
+                        required
+                    />
+                </label>
+                <label for="correo">
+                    <span>¿Cual es tu correo?</span>
+                    <input
+                        type="email"
+                        name="correo"
+                        id="correo"
+                        placeholder="tu correo"
+                        autocomplete="email"
+                        required
+                    />
+                </label>
+                <label for="pais">
+                    <span>¿En que pais vives?</span>
+                    <input
+                        type="text"
+                        name="pais"
+                        id="pais"
+                        placeholder="tu pais"
+                        autocomplete="country"
+                    />
+                </label>
+                <label for="cp">
+                    <span>¿Cual es tu codigo postal?</span>
+                    <input
+                        type="text"
+                        name="cp"
+                        id="cp"
+                        placeholder="tu codigo postal"
+                        autocomplete="postal-code"
+                    />
+                </label>
+                <input
+                    type="submit"
+                    name="enviar_contacto"
+                    id="enviar_contacto"
+                />
+            </form>
+        </main>
+    </body>
+</html>
