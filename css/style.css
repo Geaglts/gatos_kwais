@@ -28,7 +28,7 @@ header {
 }
 
 .header__menu--item a {
-    color: #5f9ea0;
+    color: #447eeb;
     font-size: 14pt;
 }
 
@@ -37,21 +37,41 @@ header {
 }
 
 .header__menu--item a:active {
-    color: #469092;
+    color: #363636;
+}
+
+.main_video--container {
+    text-align: center;
+}
+
+.main_video--container video {
+    height: 300px;
+    width: 350px;
 }
 
 .section__title {
-    color: cadetblue;
+    color: #447eeb;
     font-size: 18pt;
     padding: 10px;
 }
 
 article {
-    border: 1px solid cadetblue;
+    border: 1px solid #447eeb;
     border-radius: 5px;
     margin: 0 20px;
     margin-bottom: 20px;
     padding: 20px;
+    display: inline-block;
+}
+
+figure,
+figure + div {
+    display: inline-block;
+}
+
+figure + div {
+    max-width: calc(100% - 235px);
+    margin-left: 10px;
 }
 
 figure figcaption {
@@ -71,13 +91,13 @@ figure figcaption {
 }
 
 .origen_list--item {
-    color: cadetblue;
+    color: #447eeb;
     padding: 1px 0;
 }
 
 article h3,
 article h4 {
-    color: cadetblue;
+    color: #447eeb;
     margin-top: 15px;
 }
 
@@ -155,6 +175,20 @@ article h4 {
     color: white;
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    background-color: #447eeb;
+    border: none;
+    padding: 0.5rem 2rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6dc6c9;
 }
 
 /* Footer de la pagina */
