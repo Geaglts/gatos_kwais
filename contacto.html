@@ -7,17 +7,19 @@
         <title>Contacto</title>
     </head>
     <body>
-        <header>
-            <h1>Contactanos</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Gatos Kwais</a></li>
+        <header class="contact_header">
+            <h1 class="contact_header--title">Contactanos</h1>
+            <nav class="contact_menu">
+                <ul class="contact_menu">
+                    <li value="contact_menu--item">
+                        <a href="/">Gatos Kwais</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <form action="">
-                <label for="nombre">
+        <main class="contact_main">
+            <form action="" class="contact_form">
+                <label class="contact_form--input" for="nombre">
                     <span>¿Cual es tu nombre?</span>
                     <input
                         type="text"
@@ -28,7 +30,7 @@
                         required
                     />
                 </label>
-                <label for="correo">
+                <label class="contact_form--input" for="correo">
                     <span>¿Cual es tu correo?</span>
                     <input
                         type="email"
@@ -39,7 +41,7 @@
                         required
                     />
                 </label>
-                <label for="pais">
+                <label class="contact_form--input" for="pais">
                     <span>¿En que pais vives?</span>
                     <input
                         type="text"
@@ -49,7 +51,7 @@
                         autocomplete="country"
                     />
                 </label>
-                <label for="cp">
+                <label class="contact_form--input" for="cp">
                     <span>¿Cual es tu codigo postal?</span>
                     <input
                         type="text"
@@ -60,14 +62,20 @@
                     />
                 </label>
                 <input
+                    class="contact_form--button"
                     type="submit"
                     name="enviar_contacto"
                     id="enviar_contacto"
                 />
             </form>
         </main>
-        <footer>
-            <p>Creado por Geaglts | Información extraída de experto animal</p>
+        <footer class="contact_footer">
+            <p class="contact_footer--description">
+                Creado por Geaglts <br />Información extraída de
+                <a href="https://www.expertoanimal.com/" target="_blank">
+                    experto animal
+                </a>
+            </p>
         </footer>
     </body>
 </html>
