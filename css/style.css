@@ -200,3 +200,8 @@ footer a:active {
 footer a:hover {
     opacity: 0.8;
 }
+
+.contact_main--title {
+    font-size: var(--regular_font-size);
+    color: var(--primary-color);
+}
