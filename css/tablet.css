@@ -10,8 +10,46 @@
 @media (min-width: 600px) {
     /* Estilos del index */
 
+    .cat_list--container {
+    }
+
+    .cat_list__title {
+        font-weight: bold;
+        margin-left: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .cat_list--content {
+        border: 3px dotted #222;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-x: scroll;
+    }
+
+    .cat_list--content article {
+        height: 90%;
+        width: 50%;
+        margin: 0 1.5rem;
+    }
+
+    .img_gato {
+    }
+    .cat_description {
+        font-size: 1.4rem;
+    }
+    .origen_list {
+    }
+    .origen_list--item {
+    }
+    .article_div--more {
+    }
+
     .cat_form--container {
-        margin: 3rem 7rem;
+        margin: 0 7rem 3rem 7rem;
         padding: 2rem;
         border: 0.1rem solid var(--primary-color);
         box-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color);
