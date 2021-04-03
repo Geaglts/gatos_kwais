@@ -9,6 +9,11 @@
         <meta name="robots" content="index,follow" />
         <title>Gatos Kwai</title>
         <meta name="viewport" content="width=device-width,initial-scale= 1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -25,81 +30,81 @@
         <main>
             <section class="main_video--container">
                 <video
-                    src="assets/videos/the_two_talking_cats.mp4#t=10,20"
+                    src="assets/videos/the_two_talking_cats.mp4"
                     controls
                     preload="auto"
                 ></video>
             </section>
-            <section>
-                <h2 class="section__title">Razas de gatos</h2>
-                <article>
-                    <figure>
-                        <img
-                            class="img_gato"
-                            src="assets/images/gato-khao-manee.jpg"
-                            alt="Gato de raza khao manee"
-                        />
-                        <figcaption>Gato de raza khao manee</figcaption>
-                    </figure>
-                    <div>
-                        <h3>Gato khao manee</h3>
-                        <p>
-                            Los gatos khae manee son unos felinos provenientes
-                            de Tailandia que se caracterizan por tener un pelaje
-                            corto de color blanco y por poseer, generalmente,
-                            ojos de colores dispares (heterocromía)
-                        </p>
-                        <h4>Origen</h4>
-                        <ul class="origen_list">
-                            <li class="origen_list--item">Asia</li>
-                            <li class="origen_list--item">Tailandia</li>
-                        </ul>
-                        <a
-                            class="article_div--more"
-                            href="https://bit.ly/31Cbm3y"
-                            target="_blank"
-                        >
-                            Mas información
-                        </a>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img
-                            class="img_gato"
-                            src="assets/images/gato-caracat.jpg"
-                            alt="Gato de raza caracat"
-                        />
-                        <figcaption>Gato de raza caracat</figcaption>
-                    </figure>
-                    <div>
-                        <h3>Gato caracat</h3>
-                        <p>
-                            El comienzo de los gatos caracat fue totalmente
-                            accidental en un zoo de Rusia a finales del siglo
-                            pasado, cuando se reprodujo un caracal salvaje con
-                            un gato doméstico que andaba por allí. El resultado
-                            fue un gato con una personalidad y carácter salvaje
-                            similar al caracal, pero de menor tamaño y diferente
-                            color, por lo que fue rechazado y olvidado.
-                        </p>
-                        <h4>Origen</h4>
-                        <ul class="origen_list">
-                            <li class="origen_list--item">Europa</li>
-                            <li class="origen_list--item">Rusia</li>
-                        </ul>
-                        <a
-                            class="article_div--more"
-                            href="https://bit.ly/3cFRrXW"
-                            target="_blank"
-                        >
-                            Mas información
-                        </a>
-                    </div>
-                </article>
+            <section class="cat_list--container">
+                <h2 class="cat_list__title">Razas gatunas</h2>
+                <section class="cat_list--content">
+                    <article>
+                        <figure>
+                            <img
+                                class="img_gato"
+                                src="assets/images/gato-khao-manee.jpg"
+                                alt="Gato de raza khao manee"
+                            />
+                            <!-- <figcaption>Gato de raza khao manee</figcaption> -->
+                        </figure>
+                        <div class="cat_description">
+                            <h3>Gato khao manee</h3>
+                            <p>
+                                Los gatos khae manee son felinos provenientes de
+                                Tailandia, se caracterizan por tener un pelaje
+                                corto de color blanco y por poseer,
+                                generalmente, ojos de colores dispares
+                                (heterocromía)
+                            </p>
+                            <h4>Origen</h4>
+                            <ul class="origen_list">
+                                <li class="origen_list--item">Asia</li>
+                                <li class="origen_list--item">Tailandia</li>
+                            </ul>
+                            <a
+                                class="article_div--more"
+                                href="https://bit.ly/31Cbm3y"
+                                target="_blank"
+                            >
+                                Mas información
+                            </a>
+                        </div>
+                    </article>
+                    <article>
+                        <figure>
+                            <img
+                                class="img_gato"
+                                src="assets/images/gato-caracat.jpg"
+                                alt="Gato de raza caracat"
+                            />
+                            <!-- <figcaption>Gato de raza caracat</figcaption> -->
+                        </figure>
+                        <div class="cat_description">
+                            <h3>Gato caracat</h3>
+                            <p>
+                                Su comienzo fue totalmente accidental en un zoo
+                                de Rusia a finales del siglo pasado, cuando se
+                                reprodujo un caracal salvaje con un gato
+                                doméstico que andaba por allí.
+                            </p>
+                            <h4>Origen</h4>
+                            <ul class="origen_list">
+                                <li class="origen_list--item">Europa</li>
+                                <li class="origen_list--item">Rusia</li>
+                            </ul>
+                            <a
+                                class="article_div--more"
+                                href="https://bit.ly/3cFRrXW"
+                                target="_blank"
+                            >
+                                Mas información
+                            </a>
+                        </div>
+                    </article>
+                </section>
             </section>
             <section class="cat_form--container">
-                <h2 class="section__title">¿Tienes un michi?</h2>
+                <h2 class="form-title">¿Tienes un michi?</h2>
                 <p>Cuentanos sobre el UwU</p>
                 <form action="" class="cat_form">
                     <label class="cat_form--item" for="nombre_gato">
@@ -107,7 +112,7 @@
                         <input
                             type="text"
                             id="nombre_gato"
-                            placeholder="Nombre del michi"
+                            placeholder="nombre del michi"
                             name="nombre_gato"
                             required
                         />
@@ -143,8 +148,8 @@
                         <input list="tamano_gato" />
                         <datalist id="tamano_gato">
                             <option value="gato_chiquito">Ta chiquito</option>
-                            <option value="gato_mediano">Ta mediano</option>
-                            <option value="gato_grande">Ta grandote</option>
+                            <option value="gato_medianito">Ta mediano</option>
+                            <option value="gato_grandote">Ta grandote</option>
                         </datalist>
                     </label>
                     <label class="cat_form--item" for="descripcion_gato">
@@ -197,7 +202,12 @@
             </section>
         </main>
         <footer>
-            <p>Creado por Geaglts | Información extraída de experto animal</p>
+            <p>
+                Pagina creada por Geaglts<br />Información extraída de
+                <a href="https://www.expertoanimal.com/" target="_blank">
+                    experto animal
+                </a>
+            </p>
         </footer>
     </body>
 </html>
