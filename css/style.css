@@ -201,7 +201,67 @@ footer a:hover {
     opacity: 0.8;
 }
 
-.contact_main--title {
-    font-size: var(--regular_font-size);
+/* Estilos de contacto */
+
+.contact_header--title {
     color: var(--primary-color);
+    font-size: var(--big_font-size);
+}
+
+.contact_menu--list {
+    list-style: none;
+}
+
+.contact_menu--item a {
+    text-decoration: none;
+    font-size: var(--regular_font-size);
+    color: var(--secondary-color);
+}
+
+.contact_main {
+    padding: 0 2rem;
+}
+
+.contact_main--title {
+    font-size: calc(var(--big_font-size) - 0.4rem);
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact_form {
+    padding: 2rem 1.4rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color);
+}
+
+.contact_form--input {
+    display: block;
+    padding: 1rem 0;
+}
+
+.contact_form--input span {
+    font-size: var(--regular_font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact_form--input input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    font-size: var(--input_font-size);
+    border-radius: var(--border_radius-size);
+    font-family: inherit;
+}
+
+.contact_form--input input::placeholder {
+    color: white;
+}
+
+.contact_form--button {
+    margin-top: 1rem;
+}
+
+.contact_footer {
+    margin-top: 2rem;
 }
