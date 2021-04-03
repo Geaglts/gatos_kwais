@@ -151,7 +151,7 @@ article + article {
     color: white;
 }
 
-input[type="submit"] {
+.index_form--submit {
     font-size: var(--regular_font-size);
     padding: 1rem 2rem;
     font-weight: bold;
@@ -163,7 +163,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.index_form--submit:hover {
     background-color: var(--secondary-color);
 }
 
