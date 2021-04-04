@@ -24,11 +24,13 @@
         flex-grow: 1;
     }
 
-    .header_title {
+    .header_title,
+    .contact_header--title {
         font-size: 3rem;
     }
 
-    .header__menu--item {
+    .header__menu--item,
+    .contact_menu--item a {
         font-size: 1.8rem;
     }
 
@@ -117,15 +119,24 @@
     }
 
     .contact_main--title {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
+    }
+
+    .contact_form {
+        padding: 3rem;
     }
 
     .contact_form--input span {
         font-size: 1.8rem;
     }
 
-    .contact_form {
-        padding: 3rem;
+    .contact_form--input input {
+        font-size: 1.4rem;
+    }
+
+    .contact_form--button {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
     }
 
     .contact_footer {
