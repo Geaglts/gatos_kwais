@@ -26,17 +26,18 @@
     }
 
     .cat_list--content {
-        height: 110vh;
+        min-height: 62rem;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         overflow-x: scroll;
     }
 
     .cat_list--content article {
-        height: 98%;
+        height: 60rem;
         width: 60%;
         margin: 0 1.5rem;
         overflow: hidden;
@@ -61,25 +62,25 @@
     }
 
     .form-title {
-        font-size: calc(var(--big_font-size) + 2em);
+        font-size: calc(var(--big_font-size) + 1rem);
         font-weight: bold;
     }
 
     .cat_form--container p {
-        font-size: var(--big_font-size);
+        font-size: calc(var(--big_font-size) - 0.5rem);
     }
 
     .cat_form--item span {
-        font-size: calc(var(--regular_font-size) + 1rem);
+        font-size: calc(var(--regular_font-size) + 0.5rem);
     }
 
     .cat_form--item input {
-        font-size: calc(var(--regular_font-size) + 0.8rem);
+        font-size: calc(var(--regular_font-size) + 0.5rem);
     }
 
     .index_form--submit {
         padding: 2rem 3.5rem;
-        font-size: calc(var(--regular_font-size) + 0.8rem);
+        font-size: calc(var(--regular_font-size) + 0.5rem);
         text-transform: capitalize;
         letter-spacing: 0.1rem;
     }
