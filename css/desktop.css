@@ -1,0 +1,57 @@
+/* 
+--primary-color: #26408b;
+--secondary-color: #0f084b;
+--border_radius-size: 0.5rem;
+--input_font-size: 1.4rem;
+--regular_font-size: 1.6rem;
+--big_font-size: 2.6rem;
+*/
+
+@media (min-width: 800px) {
+    body {
+        height: 100vh;
+    }
+
+    /* Estilos de contacto */
+
+    .contact_header {
+        padding: 1rem;
+        display: flex;
+    }
+
+    .contact_header--title {
+        flex-grow: 1;
+        margin-left: 2rem;
+    }
+
+    .contact_header--menu {
+        display: inherit;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+        margin-right: 2rem;
+    }
+
+    .contact_main {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact_main--title {
+        font-size: 2.6rem;
+    }
+
+    .contact_form--input span {
+        font-size: 1.8rem;
+    }
+
+    .contact_form {
+        padding: 3rem;
+    }
+
+    .contact_footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
