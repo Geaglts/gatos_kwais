@@ -9,11 +9,13 @@
 
 @media (min-width: 600px) {
     /* Estilos del index */
-    .header_title {
+    .header_title,
+    .contact_header--title {
         font-size: calc(var(--big_font-size) + 2.5rem);
     }
 
-    .header__menu--item {
+    .header__menu--item,
+    .contact_menu--item a {
         font-size: calc(var(--regular_font-size) + 1rem);
     }
 
@@ -87,5 +89,26 @@
 
     footer > p {
         font-size: var(--regular_font-size);
+    }
+
+    /* Estilos de contacto */
+    .contact_main--title {
+        font-size: calc(var(--regular_font-size) + 1.5rem);
+    }
+
+    .contact_form {
+        padding: 3rem;
+    }
+
+    .contact_form--input span {
+        font-size: calc(var(--regular_font-size) + 0.5rem);
+    }
+
+    .contact_form--input input {
+        font-size: calc(var(--regular_font-size) + 0.3rem);
+    }
+
+    .contact_form--button {
+        font-size: calc(var(--regular_font-size) + 0.2rem);
     }
 }
