@@ -10,8 +10,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gatos Kwai</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="css/tablet.css"
+            media="screen and (min-width: 600px)"
+        />
         <link
             rel="stylesheet"
             href="css/desktop.css"
@@ -101,6 +105,7 @@
                             </a>
                         </div>
                     </article>
+                    <div class="white_space"></div>
                 </section>
             </section>
             <section class="cat_form--container">
@@ -152,13 +157,13 @@
                         <textarea
                             id="descripcion_gato"
                             cols="1"
-                            rows="4"
+                            rows="7"
                             name="descripcion_gato"
                             required
                         >
                         </textarea>
                     </label>
-                    <input type="submit" />
+                    <input class="index_form--submit" type="submit" />
                 </form>
             </section>
         </main>

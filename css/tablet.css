@@ -1,0 +1,114 @@
+/* 
+--primary-color: #26408b;
+    --secondary-color: #0f084b;
+    --border_radius-size: 0.5rem;
+    --input_font-size: 1.4rem;
+    --regular_font-size: 1.6rem;
+    --big_font-size: 2.6rem;
+*/
+
+@media (min-width: 600px) {
+    /* Estilos del index */
+    .header_title,
+    .contact_header--title {
+        font-size: calc(var(--big_font-size) + 2.5rem);
+    }
+
+    .header__menu--item,
+    .contact_menu--item a {
+        font-size: calc(var(--regular_font-size) + 1rem);
+    }
+
+    .cat_list__title {
+        font-weight: bold;
+        margin-left: 1.5rem;
+        margin-bottom: 0;
+        position: relative;
+        font-size: calc(var(--big_font-size) + 1rem);
+    }
+
+    .cat_list--content {
+        min-height: 62rem;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+
+    .cat_list--content article {
+        height: 60rem;
+        width: 60%;
+        margin: 0 1.5rem;
+        overflow: hidden;
+    }
+
+    .cat_description {
+        font-size: 1.6rem;
+    }
+
+    .white_space {
+        opacity: 0;
+        height: 100%;
+        width: 0.5rem;
+    }
+
+    .cat_form--container {
+        margin: 2rem 2rem 4rem 2rem;
+        padding: 2rem;
+        border: 0.1rem solid var(--primary-color);
+        box-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color);
+        border-radius: var(--border_radius-size);
+    }
+
+    .form-title {
+        font-size: calc(var(--big_font-size) + 1rem);
+        font-weight: bold;
+    }
+
+    .cat_form--container p {
+        font-size: calc(var(--big_font-size) - 0.5rem);
+    }
+
+    .cat_form--item span {
+        font-size: calc(var(--regular_font-size) + 0.5rem);
+    }
+
+    .cat_form--item input {
+        font-size: calc(var(--regular_font-size) + 0.5rem);
+    }
+
+    .index_form--submit {
+        padding: 2rem 3.5rem;
+        font-size: calc(var(--regular_font-size) + 0.5rem);
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+    }
+
+    footer > p {
+        font-size: var(--regular_font-size);
+    }
+
+    /* Estilos de contacto */
+    .contact_main--title {
+        font-size: calc(var(--regular_font-size) + 1.5rem);
+    }
+
+    .contact_form {
+        padding: 3rem;
+    }
+
+    .contact_form--input span {
+        font-size: calc(var(--regular_font-size) + 0.5rem);
+    }
+
+    .contact_form--input input {
+        font-size: calc(var(--regular_font-size) + 0.3rem);
+    }
+
+    .contact_form--button {
+        font-size: calc(var(--regular_font-size) + 0.2rem);
+    }
+}
