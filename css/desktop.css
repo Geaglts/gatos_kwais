@@ -24,6 +24,14 @@
         flex-grow: 1;
     }
 
+    .header_title {
+        font-size: 3rem;
+    }
+
+    .header__menu--item {
+        font-size: 1.8rem;
+    }
+
     .header__menu {
         display: inherit;
         justify-content: flex-end;
@@ -31,7 +39,7 @@
     }
 
     .main_video--container {
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
     }
 
