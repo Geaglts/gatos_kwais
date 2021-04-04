@@ -49,12 +49,13 @@
     }
 
     .cat_list--content {
-        min-height: 60vh;
+        min-height: 100vh;
         display: flex;
         margin: 0 auto;
         width: 65%;
         flex-direction: row;
         flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .cat_list--content article {
