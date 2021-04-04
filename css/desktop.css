@@ -12,6 +12,75 @@
         height: 100vh;
     }
 
+    /* Estilos para index */
+    .index_header {
+        width: 98vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .header_title,
+    .header__menu {
+        flex-grow: 1;
+    }
+
+    .header__menu {
+        display: inherit;
+        justify-content: flex-end;
+        margin: 1rem;
+    }
+
+    .main_video--container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .cat_list__title {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .cat_list--content {
+        min-height: 60vh;
+        display: flex;
+        margin: 0 auto;
+        width: 65%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cat_list--content article {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    .img_gato {
+        position: relative;
+        width: 100%;
+    }
+
+    .cat_description {
+        text-align: center;
+    }
+
+    .cat_form--container {
+        border: 0.2rem solid var(--primary-color);
+        box-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color);
+        border-radius: var(--border_radius-size);
+        padding: 2rem;
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        margin: 0;
+        width: 100%;
+    }
+
     /* Estilos de contacto */
 
     .contact_header {
