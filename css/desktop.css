@@ -8,139 +8,99 @@
 */
 
 @media (min-width: 800px) {
-    body {
-        height: 100vh;
-    }
-
-    /* Estilos para index */
+    /* Home */
+    /* Header */
     .index_header {
-        width: 98vw;
-        display: flex;
-        align-items: center;
-    }
-
-    .header_title,
-    .header__menu {
-        flex-grow: 1;
-    }
-
-    .header_title,
-    .contact_header--title {
-        font-size: 3rem;
-    }
-
-    .header__menu--item,
-    .contact_menu--item a {
-        font-size: 1.8rem;
-    }
-
-    .header__menu {
-        display: inherit;
-        justify-content: flex-end;
-        margin: 1rem;
-    }
-
-    .main_video--container {
-        width: 40%;
-        margin: 0 auto;
-    }
-
-    .cat_list__title {
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .cat_list--content {
-        min-height: 100vh;
-        display: flex;
-        margin: 0 auto;
-        width: 65%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-
-    .cat_list--content article {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        margin: 3rem auto;
-    }
-
-    .img_gato {
-        position: relative;
-        width: 100%;
-    }
-
-    .cat_description {
-        text-align: center;
-    }
-
-    .cat_form--container {
-        border: 0.2rem solid var(--primary-color);
-        box-shadow: 0.2rem 0.2rem 0.4rem var(--primary-color);
-        border-radius: var(--border_radius-size);
-        padding: 2rem;
-        text-align: center;
-        width: 40%;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-    }
-
-    footer {
         margin: 0;
+        height: 75px;
+        padding: 0 25px;
+        background: linear-gradient(-45deg, #2f52bd, #1d1187);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .index_header .header_title a {
+        color: white;
+        font-size: 26pt;
+        display: block;
+    }
+
+    .header__menu .header__menu--item a {
+        font-size: 12pt;
+        color: white;
+        display: block;
+        transition: all 350ms;
+    }
+
+    .header__menu .header__menu--item a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 0%;
+    }
+
+    /* Video */
+    .main_video--container {
+        height: calc(100vh - 75px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .main_video--container h2 {
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .main_video--container video {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 60%;
+        width: auto;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    /* Card of cats*/
+    main .cat_list--container {
+        width: 50%;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+    }
+
+    main .cat_list--container .cat_list__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        margin: 0;
+        margin-left: 10px;
+        font-weight: normal;
+        font-size: 22pt;
+    }
+
+    main .cat_list--container .cat_list--content {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
         width: 100%;
     }
 
-    /* Estilos de contacto */
-
-    .contact_header {
-        padding: 1rem;
-        display: flex;
+    main .cat_list--container .cat_list--content article {
+        height: 450px;
+        width: 300px;
     }
 
-    .contact_header--title {
-        flex-grow: 1;
-        margin-left: 2rem;
-    }
-
-    .contact_header--menu {
-        display: inherit;
-        justify-content: flex-end;
-        align-items: center;
-        flex-grow: 1;
-        margin-right: 2rem;
-    }
-
-    .contact_main {
-        width: 40%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .contact_main--title {
-        font-size: 2.2rem;
-    }
-
-    .contact_form {
-        padding: 3rem;
-    }
-
-    .contact_form--input span {
-        font-size: 1.8rem;
-    }
-
-    .contact_form--input input {
-        font-size: 1.4rem;
-    }
-
-    .contact_form--button {
-        padding: 1rem 2rem;
-        font-size: 1.6rem;
-    }
-
-    .contact_footer {
-        position: absolute;
-        bottom: 0;
+    /* Formulario */
+    main .cat_form--container {
+        display: inline-flex;
+        width: 50%;
+        padding: 0;
+        border: none;
+        margin: 0;
     }
 }
