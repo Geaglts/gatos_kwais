@@ -24,8 +24,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Header */
+
 header {
-    padding: 2rem;
+    margin: 15px 10px;
 }
 
 .header_title {
@@ -59,68 +61,120 @@ main {
     width: 100%;
 }
 
+/* Cat List */
+
 .cat_list--container {
     color: var(--primary-color);
-    font-size: var(--regular_font-size);
 }
 
 .cat_list__title {
-    margin: 0.5em 0;
+    margin: 10px 0;
     font-weight: normal;
-    font-size: var(--big_font-size);
+    font-size: 16pt;
 }
 
 .cat_list--content {
-    min-height: 100vh;
+    display: flex;
+    height: 315px;
+    align-items: center;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.cat_list--container .cat_list--content .cat_gost {
+    width: 1px;
+    height: 1px;
+    border: 1px solid transparent;
 }
 
 article {
-    border-radius: var(--border_radius-size);
-    box-shadow: 2px 2px 4px 1px var(--primary-color);
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    width: 65%;
+    height: 300px;
+    margin: 0 10px;
 }
 
-article + article {
-    margin-top: 2.3rem;
+article figure {
+    background-color: rebeccapurple;
+    height: 80px;
 }
 
 .img_gato {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cat_description {
-    padding: 0 1.5rem;
-    padding-bottom: 1.5rem;
+.article__info--container {
+    padding: 10px;
 }
 
-.cat_description > h4 {
-    margin-top: 1rem;
+.article__info--title {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 12pt;
 }
 
-.origen_list {
+.article__info--description {
+    height: 100px;
+    overflow-y: scroll;
+    font-size: 10pt;
+}
+
+.article__info--origin {
+    height: 45px;
+}
+
+.article__info--origin h4 {
+    font-size: 10pt;
+}
+
+.article__info--origin .origin_list {
+    display: flex;
+    margin-top: 3px;
     list-style: none;
-    margin-bottom: 1rem;
 }
 
-.article_div--more {
-    color: var(--primary-color);
-    position: relative;
-    left: 10;
-    line-height: 1.5rem;
+.article__info--origin .origin_list li {
+    background-color: #26408b;
+    padding: 1px 6px;
+    border-radius: 50px;
+    color: white;
+    margin-right: 5px;
+    font-size: 7pt;
 }
 
-.cat_form--container {
-    margin-top: 2rem;
+.article__info--more {
+    height: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+
+.article__info--more a {
+    color: #26408b;
+    font-size: 8pt;
+}
+
+/* Form */
 
 .form-title {
-    font-weight: var(--regular_font-size);
-    font-size: var(--big_font-size);
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    font-size: 16pt;
     color: var(--primary-color);
 }
 
 .cat_form--container p {
-    font-size: var(--regular_font-size);
+    font-size: 11pt;
     color: var(--secondary-color);
+    margin-bottom: 5px;
 }
 
 .cat_form--item {
@@ -129,7 +183,7 @@ article + article {
 }
 
 .cat_form--item span {
-    font-size: var(--regular_font-size);
+    font-size: 12pt;
     color: var(--primary-color);
     font-weight: bold;
 }
@@ -142,7 +196,7 @@ article + article {
     border: none;
     border-radius: var(--border_radius-size);
     font-family: "Poppins", sans-serif;
-    font-size: var(--input_font-size);
+    font-size: 10pt;
     padding: 1rem;
 }
 
@@ -151,7 +205,7 @@ article + article {
 }
 
 .index_form--submit {
-    font-size: var(--regular_font-size);
+    font-size: 12pt;
     padding: 1rem 2rem;
     font-weight: bold;
     border: none;
@@ -159,11 +213,6 @@ article + article {
     background-color: var(--primary-color);
     color: white;
     border-radius: var(--border_radius-size);
-    cursor: pointer;
-}
-
-.index_form--submit:hover {
-    background-color: var(--secondary-color);
 }
 
 footer {
@@ -186,17 +235,23 @@ footer > p {
     text-align: center;
 }
 
-footer a {
-    color: white;
+footer p:first-child a {
+    color: var(--primary-color);
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
 }
 
-footer a:active {
-    opacity: 0.8;
+footer p:nth-child(2) {
+    color: #ffffff;
 }
 
-footer a:hover {
-    opacity: 0.8;
+footer p:nth-child(2) a {
+    color: inherit;
 }
 
 /* Estilos de contacto */
