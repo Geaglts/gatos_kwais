@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+    .form--content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form--content form {
+        width: 65%;
+        border-radius: 10px;
+    }
+}
