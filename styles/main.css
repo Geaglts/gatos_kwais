@@ -56,11 +56,6 @@ main {
 }
 
 /* MAIN VIDEO */
-
-main .main__video--container {
-    height: 240px;
-}
-
 main .main__video--container video {
     width: 100%;
 }
