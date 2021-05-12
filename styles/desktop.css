@@ -1,0 +1,42 @@
+@media (min-width: 800px) {
+    .main__content--container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* VIDEOS */
+    main .main__video--container {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .main__video--container video {
+        height: 400px;
+        width: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    /* CARDs */
+    .main__content--container .content__list--container {
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .main__content--container .list__items--container article {
+        height: 694px;
+        max-height: 694px;
+        width: 360px;
+        max-width: 400px;
+    }
+
+    /* FORM */
+    .main__content--container .content__form--container form {
+        width: 95%;
+        max-width: 467px;
+    }
+}

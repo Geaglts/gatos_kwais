@@ -1,4 +1,25 @@
 @media (min-width: 600px) {
+    * {
+        outline: none;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    header h1 {
+        font-size: 42pt;
+    }
+
+    header ul li {
+        margin-bottom: 20px;
+    }
+
+    /* TITLES */
+    main .content__list--container .list--title {
+        margin-top: 0px;
+    }
+
     .form--content {
         display: flex;
         justify-content: center;
@@ -7,5 +28,14 @@
     .form--content form {
         width: 65%;
         border-radius: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 14pt;
+    }
+
+    footer p:first-child a img {
+        margin-right: 5px;
     }
 }
