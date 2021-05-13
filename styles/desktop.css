@@ -20,6 +20,14 @@
         background: rgba(106, 127, 219, 0.2);
     }
 
+    a {
+        transition: all 350ms;
+    }
+
+    a:hover {
+        color: #cbc8fa;
+    }
+
     .main__content--container {
         width: 100%;
         display: grid;
@@ -60,5 +68,11 @@
     .main__content--container .content__form--container form {
         width: 95%;
         max-width: 467px;
+    }
+
+    footer p:first-child a:hover {
+        background-color: #6a7fdb;
+        color: #f1f1f1;
+        border: 1px solid #f1f1f1;
     }
 }
