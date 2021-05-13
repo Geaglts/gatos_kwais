@@ -1,9 +1,31 @@
 @media (min-width: 800px) {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #6a7fdb;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(106, 127, 219, 0.2);
+    }
+
     .main__content--container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        margin-top: 20px;
     }
 
     /* VIDEOS */
